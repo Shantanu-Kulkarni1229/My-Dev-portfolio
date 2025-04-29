@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom dark mode transitions */
+.dark {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300;
+}
+
+/* Custom scrollbar for dark mode */
+.dark ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  @apply bg-gray-800;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-gray-600 rounded-full hover:bg-gray-500;
+}
