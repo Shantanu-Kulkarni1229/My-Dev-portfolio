@@ -221,7 +221,7 @@ const Home = ({ darkMode }: { darkMode: boolean }) => {
                     }}
                   >
                     <span className={`bg-gradient-to-r ${accentColors.primary} bg-clip-text text-transparent`}>
-                      Shantanu
+                      Shantanu Kulkarni 
                     </span>
                     <motion.span 
                       className="absolute -inset-1 bg-gradient-to-r from-teal-500/20 to-indigo-500/20 rounded-lg blur-sm"
@@ -269,7 +269,7 @@ const Home = ({ darkMode }: { darkMode: boolean }) => {
             <motion.div variants={containerVariants} className="mb-10 space-y-5">
               {[
                 "I specialize in building dynamic web experiences, intuitive dashboards, and solving complex problems with efficient code and design",
-                "With a strong foundation in AI, ML, Blockchain, Web Development, and Data Science, I bring ideas to life through technology.",
+                "With a strong foundation in Web Development, App Development , UIUX Designing , Artificial Intellegience , Data Strcutures & Data analysis, I bring ideas to life through technology.",
                 "I lead projects, collaborate in teams, and constantly explore the latest trends to deliver impactful digital solutions.",
                 "From crafting seamless UIs to analyzing deep datasets, my journey is about creating, learning, and evolving in the tech world."
                 
@@ -414,23 +414,23 @@ const Home = ({ darkMode }: { darkMode: boolean }) => {
                 {[
                   { 
                     icon: <HiCode className={`text-2xl ${darkMode ? 'text-teal-400' : 'text-teal-500'}`} />, 
-                    title: "Clean, Efficient Code", 
-                    description: "Writing maintainable code that scales with your business needs." 
+                    title: "Full-Stack Expertise", 
+                    description: "Building robust frontends and scalable backends with clean, modular code." 
                   },
                   { 
                     icon: <HiOutlineDesktopComputer className={`text-2xl ${darkMode ? 'text-indigo-400' : 'text-indigo-500'}`} />, 
-                    title: "Responsive Design", 
-                    description: "Creating interfaces that work flawlessly across all devices." 
+                    title: "Smart UI/UX", 
+                    description: "Designing interactive, user-centric interfaces with smooth transitions and accessibility in mind." 
                   },
                   { 
                     icon: <HiLightBulb className={`text-2xl ${darkMode ? 'text-amber-400' : 'text-amber-500'}`} />, 
-                    title: "Creative Solutions", 
-                    description: "Solving complex problems with elegant, innovative approaches." 
+                    title: "AI & Data-Driven Thinking", 
+                    description: "Applying ML, DS, and visualization tools to craft intelligent, data-backed solutions." 
                   },
                   { 
                     icon: <HiOutlineCloud className={`text-2xl ${darkMode ? 'text-emerald-400' : 'text-emerald-500'}`} />, 
-                    title: "Modern Architecture", 
-                    description: "Building with future-proof technologies and best practices." 
+                    title: "Tech Leadership & Innovation", 
+                    description: "Leading teams, executing projects, and adopting next-gen tools like 3JS, Hono, and Prisma." 
                   }
                 ].map((item, index) => (
                   <motion.div 
@@ -461,9 +461,9 @@ const Home = ({ darkMode }: { darkMode: boolean }) => {
                 transition={{ delay: 1.5 }}
               >
                 {[
-                  { value: "3+", label: "Years Experience" },
-                  { value: "20+", label: "Projects Completed" },
-                  { value: "15+", label: "Happy Clients" },
+                  { value: "1+", label: "Years Experience" },
+                  { value: "10+", label: "Projects Completed" },
+                  { value: "5+", label: "Happy Clients" },
                   { value: "5+", label: "Technologies Mastered" }
                 ].map((stat, index) => (
                   <motion.div 
@@ -502,7 +502,7 @@ const Home = ({ darkMode }: { darkMode: boolean }) => {
             TECHNOLOGIES I WORK WITH
           </motion.p>
           <div className="flex justify-center gap-4 flex-wrap">
-            {['React', 'TypeScript', 'Node.js', 'Next.js', 'Tailwind CSS', 'MongoDB', 'Express', 'GraphQL'].map((tech, index) => (
+            {['React', 'TypeScript', 'Node.js', 'Next.js', 'Tailwind CSS', 'MongoDB', 'Express', 'Flutter', 'Figma','Python'].map((tech, index) => (
               <motion.div
                 key={tech}
                 initial={{ opacity: 0, y: 20 }}

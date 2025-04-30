@@ -36,14 +36,14 @@ const Skills = ({ darkMode }: { darkMode: boolean }) => {
         { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "text-cyan-400", proficiency: 95 },
         { name: "Web Components", icon: <TbBrandThreejs />, color: "text-emerald-500", proficiency: 80 },
         { name: "Redux", icon: <SiRedux />, color: "text-purple-600", proficiency: 85 },
-        { name: "Angular", icon: <SiAngular />, color: "text-red-500", proficiency: 75 },
-        { name: "Vue.js", icon: <SiVuedotjs />, color: "text-green-500", proficiency: 70 },
+        //{ name: "Angular", icon: <SiAngular />, color: "text-red-500", proficiency: 75 },
+        //{ name: "Vue.js", icon: <SiVuedotjs />, color: "text-green-500", proficiency: 70 },
         { name: "HTML5", icon: <SiHtml5 />, color: "text-orange-600", proficiency: 95 },
         { name: "CSS3", icon: <SiCss3 />, color: "text-blue-500", proficiency: 90 },
         { name: "JavaScript", icon: <SiJavascript />, color: "text-yellow-500", proficiency: 95 },
         { name: "Sass", icon: <SiSass />, color: "text-pink-500", proficiency: 85 },
-        { name: "Storybook", icon: <SiStorybook />, color: "text-pink-600", proficiency: 80 },
-        { name: "Gatsby", icon: <SiGatsby />, color: "text-purple-600", proficiency: 75 },
+        //{ name: "Storybook", icon: <SiStorybook />, color: "text-pink-600", proficiency: 80 },
+        //{ name: "Gatsby", icon: <SiGatsby />, color: "text-purple-600", proficiency: 75 },
         { name: "Three.js", icon: <TbBrandThreejs />, color: "text-black dark:text-white", proficiency: 70 },
       ]
     },
@@ -55,15 +55,15 @@ const Skills = ({ darkMode }: { darkMode: boolean }) => {
         { name: "Node.js", icon: <FaNodeJs />, color: "text-green-600", proficiency: 90 },
         { name: "Express", icon: <SiExpress />, color: "text-gray-400", proficiency: 90 },
         { name: "NestJS", icon: <SiNestjs />, color: "text-red-600", proficiency: 85 },
-        { name: "GraphQL", icon: <SiGraphql />, color: "text-pink-600", proficiency: 80 },
+        //{ name: "GraphQL", icon: <SiGraphql />, color: "text-pink-600", proficiency: 80 },
         { name: "Python", icon: <FaPython />, color: "text-blue-400", proficiency: 85 },
-        { name: "Django", icon: <SiDjango />, color: "text-green-800 dark:text-green-500", proficiency: 75 },
+        //{ name: "Django", icon: <SiDjango />, color: "text-green-800 dark:text-green-500", proficiency: 75 },
         { name: "FastAPI", icon: <SiFastapi />, color: "text-teal-500", proficiency: 80 },
         { name: "Java", icon: <FaJava />, color: "text-red-500", proficiency: 70 },
-        { name: "Go", icon: <TbBrandGolang />, color: "text-blue-500", proficiency: 65 },
-        { name: "C#", icon: <SiSharp />, color: "text-purple-700", proficiency: 60 },
-        { name: "Rust", icon: <SiRust />, color: "text-orange-700", proficiency: 50 },
-        { name: "Deno", icon: <SiDeno />, color: "text-black dark:text-white", proficiency: 60 },
+        //{ name: "Go", icon: <TbBrandGolang />, color: "text-blue-500", proficiency: 65 },
+        //{ name: "C#", icon: <SiSharp />, color: "text-purple-700", proficiency: 60 },
+        //{ name: "Rust", icon: <SiRust />, color: "text-orange-700", proficiency: 50 },
+        //{ name: "Deno", icon: <SiDeno />, color: "text-black dark:text-white", proficiency: 60 },
       ]
     },
     {
@@ -75,9 +75,9 @@ const Skills = ({ darkMode }: { darkMode: boolean }) => {
         { name: "MongoDB", icon: <SiMongodb />, color: "text-green-500", proficiency: 85 },
         { name: "Supabase", icon: <SiSupabase />, color: "text-emerald-500", proficiency: 80 },
         { name: "Firebase", icon: <SiFirebase />, color: "text-amber-500", proficiency: 85 },
-        { name: "Redis", icon: <SiRedis />, color: "text-red-500", proficiency: 75 },
-        { name: "Elasticsearch", icon: <SiElasticsearch />, color: "text-yellow-500", proficiency: 70 },
-        { name: "RabbitMQ", icon: <SiRabbitmq />, color: "text-orange-500", proficiency: 65 },
+        //{ name: "Redis", icon: <SiRedis />, color: "text-red-500", proficiency: 75 },
+        //{ name: "Elasticsearch", icon: <SiElasticsearch />, color: "text-yellow-500", proficiency: 70 },
+        //{ name: "RabbitMQ", icon: <SiRabbitmq />, color: "text-orange-500", proficiency: 65 },
         //{ name: "Kafka", icon: <SiKafka />, color: "text-black dark:text-white", proficiency: 60 },
       ]
     },
@@ -86,15 +86,15 @@ const Skills = ({ darkMode }: { darkMode: boolean }) => {
       icon: <RiCloudLine className="text-2xl" />,
       description: "Implementing CI/CD pipelines and managing cloud infrastructure for optimal application deployment.",
       skills: [
-        { name: "Docker", icon: <FaDocker />, color: "text-blue-500", proficiency: 85 },
-        { name: "Kubernetes", icon: <SiKubernetes />, color: "text-blue-600", proficiency: 75 },
+        //{ name: "Docker", icon: <FaDocker />, color: "text-blue-500", proficiency: 85 },
+        //{ name: "Kubernetes", icon: <SiKubernetes />, color: "text-blue-600", proficiency: 75 },
         { name: "AWS", icon: <FaAws />, color: "text-amber-600", proficiency: 80 },
         { name: "Google Cloud", icon: <SiGooglecloud />, color: "text-red-500", proficiency: 70 },
         //{ name: "Azure", icon: <SiMicrosoft />, color: "text-blue-500", proficiency: 65 },
-        { name: "Jenkins", icon: <SiJenkins />, color: "text-red-600", proficiency: 70 },
-        { name: "TeamCity", icon: <SiTeamcity />, color: "text-green-500", proficiency: 65 },
-        { name: "Terraform", icon: <SiTerraform />, color: "text-purple-600", proficiency: 70 },
-        { name: "Linux", icon: <SiDebian />, color: "text-orange-500", proficiency: 80 },
+        //{ name: "Jenkins", icon: <SiJenkins />, color: "text-red-600", proficiency: 70 },
+        //{ name: "TeamCity", icon: <SiTeamcity />, color: "text-green-500", proficiency: 65 },
+        //{ name: "Terraform", icon: <SiTerraform />, color: "text-purple-600", proficiency: 70 },
+        //{ name: "Linux", icon: <SiDebian />, color: "text-orange-500", proficiency: 80 },
       ]
     },
     {
@@ -104,7 +104,7 @@ const Skills = ({ darkMode }: { darkMode: boolean }) => {
       skills: [
         { name: "TensorFlow", icon: <SiTensorflow />, color: "text-orange-500", proficiency: 75 },
         { name: "PyTorch", icon: <SiPytorch />, color: "text-red-500", proficiency: 70 },
-        { name: "Hugging Face", icon: <SiHuggingface />, color: "text-yellow-500", proficiency: 75 },
+        //{ name: "Hugging Face", icon: <SiHuggingface />, color: "text-yellow-500", proficiency: 75 },
         { name: "Computer Vision", icon: <RiRobot2Line />, color: "text-purple-500", proficiency: 65 },
         { name: "NLP", icon: <RiBrainLine />, color: "text-green-500", proficiency: 70 },
         { name: "Prompt Engineering", icon: <RiCodeLine />, color: "text-indigo-500", proficiency: 85 },
@@ -120,12 +120,12 @@ const Skills = ({ darkMode }: { darkMode: boolean }) => {
         { name: "API Design", icon: <TbApi />, color: "text-green-500", proficiency: 90 },
         { name: "Testing", icon: <RiTestTubeLine />, color: "text-red-500", proficiency: 85 },
         { name: "Jest", icon: <SiJest />, color: "text-red-600", proficiency: 80 },
-        { name: "Cypress", icon: <SiCypress />, color: "text-gray-800 dark:text-gray-200", proficiency: 75 },
+        //{ name: "Cypress", icon: <SiCypress />, color: "text-gray-800 dark:text-gray-200", proficiency: 75 },
         { name: "Security", icon: <FiLifeBuoy />, color: "text-yellow-500", proficiency: 75 },
         { name: "Performance", icon: <FiActivity />, color: "text-cyan-500", proficiency: 80 },
         { name: "Git", icon: <SiGit />, color: "text-orange-600", proficiency: 90 },
         { name: "GitHub", icon: <FaGithub />, color: "text-gray-800 dark:text-gray-200", proficiency: 90 },
-        { name: "Agile", icon: <FiMonitor />, color: "text-indigo-500", proficiency: 85 },
+        //{ name: "Agile", icon: <FiMonitor />, color: "text-indigo-500", proficiency: 85 },
       ]
     },
     {
@@ -133,10 +133,10 @@ const Skills = ({ darkMode }: { darkMode: boolean }) => {
       icon: <FiCpu className="text-2xl" />,
       description: "Developing cross-platform and native mobile applications for iOS and Android.",
       skills: [
-        { name: "React Native", icon: <FaReact />, color: "text-blue-500", proficiency: 80 },
+        //{ name: "React Native", icon: <FaReact />, color: "text-blue-500", proficiency: 80 },
         { name: "Flutter", icon: <SiFlutter />, color: "text-blue-400", proficiency: 65 },
-        { name: "Swift", icon: <SiSwift />, color: "text-orange-500", proficiency: 60 },
-        { name: "Kotlin", icon: <SiKotlin />, color: "text-purple-500", proficiency: 65 },
+        //{ name: "Swift", icon: <SiSwift />, color: "text-orange-500", proficiency: 60 },
+        //{ name: "Kotlin", icon: <SiKotlin />, color: "text-purple-500", proficiency: 65 },
       ]
     },
     {
@@ -515,7 +515,7 @@ const Skills = ({ darkMode }: { darkMode: boolean }) => {
             >
               <div className={`p-4 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-100'} text-center`}>
                 <div className="text-3xl font-bold mb-2 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
-                  50+
+                  30+
                 </div>
                 <div className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                   Technologies
@@ -523,7 +523,7 @@ const Skills = ({ darkMode }: { darkMode: boolean }) => {
               </div>
               <div className={`p-4 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-100'} text-center`}>
                 <div className="text-3xl font-bold mb-2 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
-                  10+
+                  1+
                 </div>
                 <div className={`text-sm ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                   Years Experience

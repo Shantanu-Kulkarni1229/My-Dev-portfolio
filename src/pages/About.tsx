@@ -19,8 +19,48 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
   // For progress bar animation at the top
   const scaleX = useTransform(smoothProgress, [0, 1], [0, 1]);
   
-  // Skills with ratings
- 
+  // Timeline data for internships and projects
+  const timelineItems = [
+    {
+      id: 1,
+      type: 'internship',
+      title: 'Frontend Developer Intern',
+      company: 'Tech Innovators Inc.',
+      logo: '/tech-innovators-logo.png',
+      startDate: 'Jun 2023',
+      endDate: 'Present',
+      description: 'Developed responsive UIs with React and TypeScript. Implemented features that increased user engagement by 25% and optimized rendering performance by 40%.',
+      tags: ['React', 'TypeScript', 'Next.js'],
+      icon: <FaBriefcase />,
+      color: 'purple'
+    },
+    {
+      id: 2,
+      type: 'project',
+      title: 'E-commerce Platform',
+      company: 'Team Project',
+      logo: '/ecommerce-logo.png',
+      startDate: 'Mar 2023',
+      endDate: 'May 2023',
+      description: 'Led a team of 4 developers to build a full-stack e-commerce platform with payment integration and admin dashboard.',
+      tags: ['React', 'Node.js', 'MongoDB'],
+      icon: <FaCode />,
+      color: 'blue'
+    },
+    {
+      id: 3,
+      type: 'internship',
+      title: 'Web Development Trainee',
+      company: 'Digital Solutions Ltd.',
+      logo: '/digital-solutions-logo.png',
+      startDate: 'Jan 2023',
+      endDate: 'May 2023',
+      description: 'Built 10+ client websites using modern web technologies. Reduced page load times by 60% through optimization.',
+      tags: ['JavaScript', 'Tailwind CSS', 'Node.js'],
+      icon: <FaBriefcase />,
+      color: 'green'
+    }
+  ];
 
   // Certifications/Achievements section
   const achievements = [
@@ -117,13 +157,22 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
 
   // Parallax effect
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const handleMouseMove = (e: { clientX: any; clientY: any; }) => {
+  const handleMouseMove = (e: React.MouseEvent) => {
     const { clientX, clientY } = e;
     const { innerWidth, innerHeight } = window;
     setMousePosition({
       x: (clientX / innerWidth - 0.5) * 20,
       y: (clientY / innerHeight - 0.5) * 20
     });
+  };
+
+  // Color mapping for timeline items
+  const colorMap = {
+    purple: darkMode ? 'bg-purple-900/30 border-purple-500' : 'bg-purple-100 border-purple-400',
+    blue: darkMode ? 'bg-blue-900/30 border-blue-500' : 'bg-blue-100 border-blue-400',
+    green: darkMode ? 'bg-green-900/30 border-green-500' : 'bg-green-100 border-green-400',
+    orange: darkMode ? 'bg-orange-900/30 border-orange-500' : 'bg-orange-100 border-orange-400',
+    pink: darkMode ? 'bg-pink-900/30 border-pink-500' : 'bg-pink-100 border-pink-400'
   };
 
   return (
@@ -365,26 +414,26 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
                 
                 {/* Social Links */}
                 <motion.div 
-  className="mt-6 flex justify-center space-x-4"
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ delay: 1.6, duration: 0.5 }}
->
-  {['github', 'linkedin', 'twitter', 'facebook', 'instagram', 'youtube', 'dribbble', 'reddit'].map((social, index) => (
-    <motion.a
-      key={social}
-      href={`#${social}`}
-      className={`w-8 h-8 rounded-full flex items-center justify-center ${darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-200 hover:bg-gray-300'} transition-colors`}
-      whileHover={{ scale: 1.2, rotate: 5 }}
-      whileTap={{ scale: 0.95 }}
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 1.7 + index * 0.1, duration: 0.3 }}
-    >
-      <i className={`fab fa-${social} ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}></i>
-    </motion.a>
-  ))}
-</motion.div>
+                  className="mt-6 flex justify-center space-x-4"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1.6, duration: 0.5 }}
+                >
+                  {['github', 'linkedin', 'twitter', 'facebook', 'instagram', 'youtube', 'dribbble', 'reddit'].map((social, index) => (
+                    <motion.a
+                      key={social}
+                      href={`#${social}`}
+                      className={`w-8 h-8 rounded-full flex items-center justify-center ${darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-200 hover:bg-gray-300'} transition-colors`}
+                      whileHover={{ scale: 1.2, rotate: 5 }}
+                      whileTap={{ scale: 0.95 }}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 1.7 + index * 0.1, duration: 0.3 }}
+                    >
+                      <i className={`fab fa-${social} ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}></i>
+                    </motion.a>
+                  ))}
+                </motion.div>
               </div>
             </motion.div>
           </motion.div>
@@ -475,12 +524,90 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
               </motion.div>
             </motion.div>
             
-            {/* Skills Section */}
-         
+            {/* Timeline Section */}
+            
+
+            {/* Experience Section */}
+            <motion.div 
+              className={`mb-12 p-6 rounded-xl ${darkMode ? 'bg-gray-800' : 'bg-white'} shadow-lg`}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <motion.h3 
+                className={`text-2xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'} flex items-center`}
+                initial={{ x: -20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <motion.span
+                  className={`inline-block w-2 h-8 mr-3 rounded ${darkMode ? 'bg-purple-500' : 'bg-purple-400'}`}
+                  animate={{ height: [32, 16, 32] }}
+                  transition={{ duration: 1.5, repeat: Infinity }}
+                />
+                Professional Experience
+              </motion.h3>
+              
+              <div className="space-y-6">
+                {experiences.map((exp, i) => (
+                  <motion.div
+                    key={exp.id}
+                    className={`p-5 rounded-lg ${darkMode ? 'bg-gray-700/50' : 'bg-gray-100'} border-l-4 ${darkMode ? 'border-purple-500' : 'border-purple-400'}`}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: i * 0.1 }}
+                    viewport={{ once: true }}
+                    whileHover={{ 
+                      y: -5,
+                      boxShadow: darkMode ? 
+                        "0 10px 25px -5px rgba(124, 58, 237, 0.2)" : 
+                        "0 10px 25px -5px rgba(124, 58, 237, 0.2)"
+                    }}
+                  >
+                    <div className="flex items-start gap-4">
+                      <div className={`p-3 rounded-full ${darkMode ? 'bg-gray-600 text-purple-400' : 'bg-white text-purple-600'}`}>
+                        {exp.icon}
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                          <h4 className={`text-lg font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+                            {exp.title}
+                          </h4>
+                          <div className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                            {exp.period}
+                          </div>
+                        </div>
+                        <div className={`text-sm font-medium mb-3 ${darkMode ? 'text-purple-400' : 'text-purple-600'}`}>
+                          {exp.company}
+                        </div>
+                        <p className={`text-sm mb-4 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                          {exp.description}
+                        </p>
+                        <div className="flex gap-3">
+                          {exp.tech.map((Icon, idx) => (
+                            <motion.div
+                              key={idx}
+                              className={`p-2 rounded-full ${darkMode ? 'bg-gray-600 text-gray-300' : 'bg-white text-gray-700'}`}
+                              whileHover={{ scale: 1.1 }}
+                              transition={{ duration: 0.2 }}
+                            >
+                              {Icon}
+                            </motion.div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
             
             {/* Achievements Section */}
            
-            {/* New Section - Work Philosophy */}
+            
+            {/* Work Philosophy Section */}
             <motion.div 
               className={`mt-12 p-6 rounded-xl ${darkMode ? 'bg-gray-800' : 'bg-white'} shadow-lg relative overflow-hidden`}
               initial={{ opacity: 0, y: 30 }}
@@ -650,7 +777,5 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
     </div>
   );
 };
-
-// Import this missing icon at the top
 
 export default About;

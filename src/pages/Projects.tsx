@@ -6,65 +6,96 @@ const Projects = ({ darkMode }: { darkMode: boolean }) => {
   const projects = [
     {
       id: 1,
-      title: "Portfolio Pro",
-      description: "A modern developer portfolio template with dark mode, 3D elements, and smooth animations built with React and Three.js.",
-      tags: ["React", "TypeScript", "Three.js", "Tailwind CSS"],
-      image: "/projects/portfolio.jpg",
-      githubLink: "https://github.com/yourusername/portfolio-pro",
-      linkedinPost: "https://linkedin.com/posts/yourprofile_portfolio-project-react-activity-123456789",
-      liveLink: "https://yourportfolio.com"
+      title: "Hawk",
+      description: "OEM vulnerability detection tool using intelligent web scraping and Python automation.",
+      tags: ["Python", "BeautifulSoup", "Flask", "Requests", "MongoDB"],
+      image: "/projects/hawk.jpg",
+      githubLink: "https://github.com/shantanu/hawk-vulnerability-tool",
+      linkedinPost: "https://linkedin.com/posts/shantanu_hawk-cybersecurity-activity-321",
+      liveLink: "https://hawkscanner.live"
     },
     {
       id: 2,
-      title: "E-Commerce Dashboard",
-      description: "Full-stack e-commerce analytics dashboard with real-time data visualization, user management, and inventory tracking.",
-      tags: ["Next.js", "Node.js", "MongoDB", "Chart.js"],
-      image: "/projects/ecommerce.jpg",
-      githubLink: "https://github.com/yourusername/ecommerce-dashboard",
-      linkedinPost: "https://linkedin.com/posts/yourprofile_ecommerce-dashboard-nextjs-activity-123456789",
-      liveLink: "https://ecommerce-demo.com"
+      title: "RecycleIT",
+      description: "Eco-conscious marketplace for recycling and exchanging old electronics responsibly.",
+      tags: ["React", "Firebase", "Firestore", "Tailwind CSS"],
+      image: "/projects/recycleit.jpg",
+      githubLink: "https://github.com/shantanu/recycleit",
+      linkedinPost: "https://linkedin.com/posts/shantanu_recycleit-sustainability-activity-987",
+      liveLink: "https://recycleit.org"
     },
     {
       id: 3,
-      title: "AI Content Generator",
-      description: "AI-powered content creation tool that generates blog posts, social media content, and marketing copy using GPT-3.",
-      tags: ["Python", "FastAPI", "React", "OpenAI"],
-      image: "/projects/ai-generator.jpg",
-      githubLink: "https://github.com/yourusername/ai-content-generator",
-      linkedinPost: "https://linkedin.com/posts/yourprofile_ai-content-generation-gpt3-activity-123456789",
-      liveLink: "https://aicontentcreator.com"
+      title: "SnapLend",
+      description: "A peer-to-peer digital lending platform for quick and secure personal loans.",
+      tags: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+      image: "/projects/snaplend.jpg",
+      githubLink: "https://github.com/shantanu/snaplend",
+      linkedinPost: "https://linkedin.com/posts/shantanu_snaplend-fintech-activity-654",
+      liveLink: "https://snaplend.app"
     },
     {
       id: 4,
-      title: "Health Tracker App",
-      description: "Mobile-first health tracking application with workout logging, nutrition analysis, and progress visualization.",
-      tags: ["React Native", "Firebase", "Redux", "D3.js"],
-      image: "/projects/health-tracker.jpg",
-      githubLink: "https://github.com/yourusername/health-tracker",
-      linkedinPost: "https://linkedin.com/posts/yourprofile_health-app-reactnative-activity-123456789",
-      liveLink: "https://healthtracker.app"
+      title: "ChatVerse",
+      description: "A real-time chat app with group chats, user authentication, and a sleek UI design.",
+      tags: ["React", "Node.js", "Express", "MongoDB", "Socket.IO", "JWT", "Tailwind CSS"],
+      image: "/projects/chatverse.jpg",
+      githubLink: "https://github.com/shantanu/chatverse",
+      linkedinPost: "https://linkedin.com/posts/shantanu_chatverse-chatapp-activity-123",
+      liveLink: "https://chatverse.live"
     },
     {
       id: 5,
-      title: "Blockchain Voting System",
-      description: "Decentralized voting platform built on Ethereum blockchain with smart contracts for secure, transparent elections.",
-      tags: ["Solidity", "Web3.js", "React", "Hardhat"],
-      image: "/projects/blockchain-voting.jpg",
-      githubLink: "https://github.com/yourusername/blockchain-voting",
-      linkedinPost: "https://linkedin.com/posts/yourprofile_blockchain-voting-ethereum-activity-123456789",
-      liveLink: "https://voting-demo.com"
+      title: "MeetVerse",
+      description: "A smooth and scalable video calling platform with screen sharing and messaging support.",
+      tags: ["React", "WebRTC", "Node.js", "Socket.IO", "Tailwind CSS"],
+      image: "/projects/meetverse.jpg",
+      githubLink: "https://github.com/shantanu/meetverse",
+      linkedinPost: "https://linkedin.com/posts/shantanu_meetverse-videoapp-activity-456",
+      liveLink: "https://meetverse.live"
     },
     {
       id: 6,
-      title: "Task Management SaaS",
-      description: "Enterprise task management solution with team collaboration, time tracking, and project analytics features.",
-      tags: ["TypeScript", "NestJS", "PostgreSQL", "GraphQL"],
-      image: "/projects/task-management.jpg",
-      githubLink: "https://github.com/yourusername/task-management-saas",
-      linkedinPost: "https://linkedin.com/posts/yourprofile_saas-productivity-activity-123456789",
-      liveLink: "https://tasksaas.com"
+      title: "WriteVerse",
+      description: "A collaborative markdown editor with real-time sync and minimal distraction design.",
+      tags: ["React", "Firebase", "Quill.js", "Tailwind CSS"],
+      image: "/projects/writeverse.jpg",
+      githubLink: "https://github.com/shantanu/writeverse",
+      linkedinPost: "https://linkedin.com/posts/shantanu_writeverse-editor-activity-789",
+      liveLink: "https://writeverse.dev"
+    },
+    {
+      id: 7,
+      title: "VidTube",
+      description: "A YouTube-inspired video streaming platform with search, categorization, and light/dark mode.",
+      tags: ["React", "RapidAPI", "Material UI", "React Router"],
+      image: "/projects/vidtube.jpg",
+      githubLink: "https://github.com/shantanu/vidtube",
+      linkedinPost: "https://linkedin.com/posts/shantanu_vidtube-videostreaming-activity-741",
+      liveLink: "https://vidtube.tv"
+    },
+    {
+      id: 8,
+      title: "MovieExplorer",
+      description: "A movie search web app with live data from TMDB API and responsive UI.",
+      tags: ["React", "TMDB API", "Tailwind CSS", "Axios"],
+      image: "/projects/movieexplorer.jpg",
+      githubLink: "https://github.com/shantanu/movieexplorer",
+      linkedinPost: "https://linkedin.com/posts/shantanu_movieexplorer-react-activity-852",
+      liveLink: "https://movieexplorer.io"
+    },
+    {
+      id: 9,
+      title: "CurrentBuzz",
+      description: "A news aggregator that fetches trending topics and stories from various sources in real time.",
+      tags: ["React", "News API", "Tailwind CSS", "Context API"],
+      image: "/projects/currentbuzz.jpg",
+      githubLink: "https://github.com/shantanu/currentbuzz",
+      linkedinPost: "https://linkedin.com/posts/shantanu_currentbuzz-newsapp-activity-963",
+      liveLink: "https://currentbuzz.today"
     }
   ];
+  
 
   // Tag color mapping for visual variety
   const tagColors = {
@@ -88,8 +119,22 @@ const Projects = ({ darkMode }: { darkMode: boolean }) => {
     "Hardhat": "from-yellow-500 to-yellow-700",
     "NestJS": "from-red-400 to-red-600",
     "PostgreSQL": "from-blue-600 to-blue-800",
-    "GraphQL": "from-pink-400 to-pink-600"
+    "GraphQL": "from-pink-400 to-pink-600",
+  
+    // NEW TAG COLORS
+    "Socket.IO": "from-gray-400 to-gray-600",
+    "JWT": "from-yellow-600 to-yellow-800",
+    "Quill.js": "from-violet-400 to-violet-600",
+    "RapidAPI": "from-indigo-500 to-indigo-700",
+    "Material UI": "from-indigo-400 to-indigo-600",
+    "Axios": "from-blue-300 to-blue-500",
+    "TMDB API": "from-teal-500 to-teal-700",
+    "Context API": "from-green-300 to-green-500",
+    "Requests": "from-red-400 to-red-600",
+    "BeautifulSoup": "from-lime-400 to-lime-600",
+    "Flask": "from-gray-600 to-gray-800"
   };
+  
 
   const getTagColor = (tag: string) => {
     return tagColors[tag as keyof typeof tagColors] || "from-gray-400 to-gray-600";

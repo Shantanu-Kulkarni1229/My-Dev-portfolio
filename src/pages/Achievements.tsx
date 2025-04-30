@@ -7,10 +7,10 @@ const Achievements = ({ darkMode }: { darkMode: boolean }) => {
   const achievements = [
     {
       id: 1,
-      title: "National Hackathon Winner",
-      type: "Hackathon",
-      description: "Won 1st place among 200+ teams in the National Tech Innovation Challenge with our AI-powered healthcare solution that reduced diagnosis time by 40%. Our team developed a machine learning model that could predict potential health risks with 92% accuracy.",
-      date: "Nov 2023",
+      title: "3rd Prize Ideation 2.0 Mumbai",
+      type: "Ideathon",
+      description: "Secured 3rd Prize at Ideation 2.0 held in Mumbai among 400+ teams from across the country. Our innovative idea impressed the judges and won us a cash prize of ₹1,00,000.",
+      date: "2024",
       icon: <FaTrophy className="text-2xl" />,
       linkedinPost: "https://linkedin.com/posts/yourprofile_hackathon-win-ai-healthcare-activity-123456789",
       images: [
@@ -19,9 +19,9 @@ const Achievements = ({ darkMode }: { darkMode: boolean }) => {
         "/achievements/hackathon3.jpg"
       ],
       stats: [
-        { label: "Teams", value: "200+" },
-        { label: "Accuracy", value: "92%" },
-        { label: "Prize", value: "$10K" }
+        { label: "Teams", value: "400+" },
+        { label: "Level", value: "National" },
+        { label: "Prize", value: "₹1,00,000" }
       ]
     },
     {
