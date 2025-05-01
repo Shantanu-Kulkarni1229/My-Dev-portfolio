@@ -12,11 +12,11 @@ const Achievements = ({ darkMode }: { darkMode: boolean }) => {
       description: "Secured 3rd Prize at Ideation 2.0 held in Mumbai among 400+ teams from across the country. Our innovative idea impressed the judges and won us a cash prize of ₹1,00,000.",
       date: "2024",
       icon: <FaTrophy className="text-2xl" />,
-      linkedinPost: "https://linkedin.com/posts/yourprofile_hackathon-win-ai-healthcare-activity-123456789",
+      linkedinPost: "https://www.linkedin.com/posts/shantanu-kulkarni1229_ideation2-teampravartak-projecthawk-activity-7320830024666759168-h0sb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZYDY0Ba-qYRrnDrDN5QtXTVLaA0bkpGvA",
       images: [
-        "/achievements/hackathon1.jpg",
-        "/achievements/hackathon2.jpg",
-        "/achievements/hackathon3.jpg"
+        "assests/images/Achievements  Section/Ideation Mumbai/1.jpg",
+        "assests/images/Achievements  Section/Ideation Mumbai/2.jpg",
+        "assests/images/Achievements  Section/Ideation Mumbai/3.jpg",
       ],
       stats: [
         { label: "Teams", value: "400+" },
@@ -26,78 +26,82 @@ const Achievements = ({ darkMode }: { darkMode: boolean }) => {
     },
     {
       id: 2,
-      title: "AI Workshop Speaker",
-      type: "Session",
-      description: "Conducted a 3-day workshop on Practical AI Applications for 150+ participants at TechFest 2023. Covered topics including TensorFlow implementation, real-world case studies, and ethical considerations in AI development. Received a 4.9/5 rating from participants.",
-      date: "Aug 2023",
-      icon: <FaChalkboardTeacher className="text-2xl" />,
-      linkedinPost: "https://linkedin.com/posts/yourprofile_ai-workshop-machinelearning-activity-123456789",
+      title: "1st Prize Spark MKD Institute Of Technlogy 2025",
+      type: "Hackathon",
+      description: "Won 1st Prize at Spark 2025, a national-level competition with 150+ teams. Our AI-powered solution stood out and bagged us a cash prize of ₹51,000.",
+      date: "2025",
+      icon: <FaTrophy className="text-2xl" />,
+      linkedinPost: "https://www.linkedin.com/posts/shantanu-kulkarni1229_ideation2-teampravartak-projecthawk-activity-7320830024666759168-h0sb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZYDY0Ba-qYRrnDrDN5QtXTVLaA0bkpGvA",
       images: [
-        "/achievements/workshop1.jpg",
-        "/achievements/workshop2.jpg"
+        "assests/images/Achievements  Section/MKD Spark/1.jpg",
+        "assests/images/Achievements  Section/MKD Spark/2.jpg",
+        "assests/images/Achievements  Section/MKD Spark/3.jpg",
       ],
       stats: [
-        { label: "Participants", value: "150+" },
-        { label: "Duration", value: "3 days" },
-        { label: "Rating", value: "4.9/5" }
+        { label: "Teams", value: "150+" },
+        { label: "Level", value: "National" },
+        { label: "Prize", value: "₹51,000" }
       ]
     },
     {
       id: 3,
-      title: "Startup Ideathon Finalist",
-      type: "Ideathon",
-      description: "Selected among top 10 teams nationwide for our blockchain-based voting system concept at Startup India Challenge. Our solution addressed election transparency issues and was praised by industry experts for its innovative approach to decentralized voting.",
-      date: "May 2023",
-      icon: <FaLightbulb className="text-2xl" />,
-      linkedinPost: "https://linkedin.com/posts/yourprofile_ideathon-startup-blockchain-activity-123456789",
+    title: "2nd Prize DIPEX Computational Intelligence",
+    type: "Project Competition",
+    description: "Awarded 2nd Prize in the Computational Intelligence category at DIPEX. Competed among 2000+ state-level teams and received a cash prize of ₹5,000.",
+    date: "2024",
+    icon: <FaTrophy className="text-2xl" />,
+      linkedinPost: "https://www.linkedin.com/posts/shantanu-kulkarni1229_ideation2-teampravartak-projecthawk-activity-7320830024666759168-h0sb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZYDY0Ba-qYRrnDrDN5QtXTVLaA0bkpGvA",
       images: [
-        "/achievements/ideathon1.jpg",
-        "/achievements/ideathon2.jpg",
-        "/achievements/ideathon3.jpg",
-        "/achievements/ideathon4.jpg"
+        "assests/images/Achievements  Section/Dipex 2025/1.jpg",
+        "assests/images/Achievements  Section/Dipex 2025/2.jpg",
+        "assests/images/Achievements  Section/Dipex 2025/3.jpg",
       ],
       stats: [
-        { label: "Teams", value: "500+" },
-        { label: "Finalists", value: "Top 10" },
-        { label: "Funding", value: "$50K" }
+        { label: "Teams", value: "2000+" },
+        { label: "Level", value: "State" },
+        { label: "Prize", value: "₹5,000" }
       ]
     },
     {
       id: 4,
-      title: "Open Source Contributor",
-      type: "Contribution",
-      description: "Recognized as Top Contributor for React libraries with 50+ merged PRs and 10+ maintained packages. My contributions helped improve performance by 15% in several widely-used components. Also mentored 5 new contributors to the ecosystem.",
-      date: "Mar 2023",
-      icon: <FaGithub className="text-2xl" />,
-      linkedinPost: "https://linkedin.com/posts/yourprofile_opensource-react-contributor-activity-123456789",
+      title: "2nd Prize India Innovates",
+      type: "Innovation Challenge",
+      description: "Won 2nd Prize at the India Innovates national-level event competing with 50+ teams. Recognized for our innovative problem-solving and awarded ₹7,500 cash prize.",
+      date: "2024",
+      icon: <FaTrophy className="text-2xl" />,
+      linkedinPost: "https://www.linkedin.com/posts/shantanu-kulkarni1229_ideation2-teampravartak-projecthawk-activity-7320830024666759168-h0sb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZYDY0Ba-qYRrnDrDN5QtXTVLaA0bkpGvA",
       images: [
-        "/achievements/opensource1.jpg",
-        "/achievements/opensource2.jpg"
+        "assests/images/Achievements  Section/India Innovates/1.jpg",
+        "assests/images/Achievements  Section/India Innovates/2.jpg",
+        "assests/images/Achievements  Section/India Innovates/3.jpg",
       ],
       stats: [
-        { label: "PRs", value: "50+" },
-        { label: "Packages", value: "10+" },
-        { label: "Performance", value: "15%" }
+        { label: "Teams", value: "50+" },
+        { label: "Level", value: "National" },
+        { label: "Prize", value: "₹7,500" }
       ]
     },
     {
       id: 5,
-      title: "AWS Certified Developer",
-      type: "Certification",
-      description: "Earned the AWS Certified Developer - Associate certification demonstrating expertise in developing and maintaining applications on AWS. Covered services like Lambda, API Gateway, DynamoDB, and best practices for cloud-native development.",
-      date: "Feb 2023",
-      icon: <FaCertificate className="text-2xl" />,
-      linkedinPost: "https://linkedin.com/posts/yourprofile_aws-certified-developer-activity-123456789",
+    title: "3rd Runner-up Hack The Gap",
+    type: "Hackathon",
+    description: "Secured 3rd Runner-up position at Hack The Gap among 100+ teams. Our creative tech solution earned a cash prize of ₹2,000.",
+    date: "2024",
+    icon: <FaTrophy className="text-2xl" />,
+      linkedinPost: "https://www.linkedin.com/posts/shantanu-kulkarni1229_ideation2-teampravartak-projecthawk-activity-7320830024666759168-h0sb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZYDY0Ba-qYRrnDrDN5QtXTVLaA0bkpGvA",
       images: [
-        "/achievements/aws1.jpg",
-        "/achievements/aws2.jpg"
+        "assests/images/Achievements  Section/India Innovates/1.jpg",
+        "assests/images/Achievements  Section/India Innovates/2.jpg",
+        "assests/images/Achievements  Section/India Innovates/3.jpg",
       ],
       stats: [
-        { label: "Exam", value: "DVA-C02" },
-        { label: "Score", value: "890/1000" },
-        { label: "Validity", value: "3 years" }
+        { label: "Teams", value: "100+" },
+        { label: "Level", value: "National" },
+        { label: "Prize", value: "₹2,000" }
       ]
     },
+    
+    
     {
       id: 6,
       title: "Tech Conference Speaker",
