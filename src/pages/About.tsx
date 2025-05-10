@@ -321,7 +321,7 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.9, duration: 0.5 }}
                 >
-                  Shantanu Kumar
+                  Shantanu Kulkarni
                 </motion.h3>
                 
                 <motion.div

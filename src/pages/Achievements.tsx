@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaLinkedin, FaTrophy, FaChalkboardTeacher, FaLightbulb, FaChevronLeft, FaChevronRight, FaGithub, FaCertificate, FaMedal, FaCode } from 'react-icons/fa';
+import { FaLinkedin, FaTrophy, FaChalkboardTeacher, FaLightbulb, FaChevronLeft, FaChevronRight, FaGithub, FaCertificate, FaMedal, FaCode, FaUsers } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
@@ -100,14 +100,33 @@ const Achievements = ({ darkMode }: { darkMode: boolean }) => {
         { label: "Prize", value: "₹2,000" }
       ]
     },
+    {
+      id: 6,
+      title: "1st Prize Techlegion 2025",
+      type: "Hackathon",
+      description: "Won 1st Prize at Techlegion 2025, a College-level competition with 50+ teams. Our AI-powered solution stood out and bagged us a cash prize of ₹2500.",
+      date: "2025",
+      icon: <FaTrophy className="text-2xl" />,
+      linkedinPost: "https://www.linkedin.com/posts/shantanu-kulkarni1229_ideation2-teampravartak-projecthawk-activity-7320830024666759168-h0sb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZYDY0Ba-qYRrnDrDN5QtXTVLaA0bkpGvA",
+      images: [
+        "assests/images/Achievements  Section/MKD Spark/1.jpg",
+        "assests/images/Achievements  Section/MKD Spark/2.jpg",
+        "assests/images/Achievements  Section/MKD Spark/3.jpg",
+      ],
+      stats: [
+        { label: "Teams", value: "50+" },
+        { label: "Level", value: "College" },
+        { label: "Prize", value: "₹2500" }
+      ]
+    },
     
     
     {
-      id: 6,
-      title: "Tech Conference Speaker",
-      type: "Conference",
-      description: "Invited speaker at DevConf 2023 discussing 'The Future of Web Development with WASM'. Presented case studies and benchmarks showing 3-5x performance improvements for compute-heavy applications using WebAssembly.",
-      date: "Jan 2023",
+      id:13 ,
+      title: "How AI Can Help Police - Maharashtra State Police",
+      type: "Guest Session",
+      description: "Conducted a special session for Chhatrapati Sambhajinagar Rural Police on 'How AI Can Be Useful for Law Enforcement', covering surveillance systems, predictive policing, and real-time alert mechanisms.",
+      date: "Feb 2025",
       icon: <FaCode className="text-2xl" />,
       linkedinPost: "https://linkedin.com/posts/yourprofile_webassembly-conference-speaker-activity-123456789",
       images: [
@@ -116,9 +135,43 @@ const Achievements = ({ darkMode }: { darkMode: boolean }) => {
         "/achievements/conference3.jpg"
       ],
       stats: [
-        { label: "Attendees", value: "300+" },
-        { label: "Duration", value: "45 min" },
-        { label: "Performance", value: "3-5x" }
+        { label: "Attendees", value: "100+ Police Officials" },
+        { label: "Duration", value: "2 Hrs" },
+        { label: "Topic", value: "AI For Police" }
+      ]
+    },
+    {
+      id:14 ,
+      title: "Career Session for High School Students",
+      type: "Guest Session",
+      description: "Delivered an educational session to 10th–12th grade students on 'Computer Science and AI as Your Future'. Discussed real-world applications, career paths, and skills needed to enter the field.",
+      date: "sep 2024",
+      icon: <FaCode className="text-2xl" />,
+      linkedinPost: "https://linkedin.com/posts/yourprofile_webassembly-conference-speaker-activity-123456789",
+      images: [
+        "assests/images/Achievements  Section/BSGM AI Session/1.jpg",
+        "assests/images/Achievements  Section/BSGM AI Session/2.jpg",
+        "assests/images/Achievements  Section/BSGM AI Session/3.jpg",
+      ],
+      stats: [
+        { label: "Students", value: "10th–12th Grade" },
+        { label: "Duration", value: "2 Hrs" },
+        { label: "Focus", value: "Career in AI/CS" }
+      ]
+    },
+    {
+      id: 15,
+      title: "Technical Lead - Coding Ninjas Campus Club",
+      type: "Leadership",
+      description:
+        "Appointed as Technical Lead of the Coding Ninjas Campus Club at our institution. Led various workshops, coding events, and mentorship initiatives to enhance peer learning and competitive coding culture.",
+      date: "2024",
+      icon: <FaUsers className="text-2xl" />,
+      linkedinPost: "https://linkedin.com/posts/yourprofile_codingninjas-clublead-activity-123456789",
+      images: ["/achievements/codingninjas-lead.jpg"],
+      stats: [
+        { label: "Events Conducted", value: "10+" },
+        { label: "Participants Impacted", value: "500+" }
       ]
     }
   ];
