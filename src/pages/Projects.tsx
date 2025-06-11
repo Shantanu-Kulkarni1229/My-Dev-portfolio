@@ -9,7 +9,7 @@ const Projects = ({ darkMode }: { darkMode: boolean }) => {
       title: "Hawk",
       description: "OEM vulnerability detection tool using intelligent web scraping and Python automation.",
       tags: ["Python", "BeautifulSoup", "Flask", "Requests", "MongoDB"],
-      image: "/projects/hawk.jpg",
+      image: "../../public/assests/images/Project Section/Hawk.jpg",
       githubLink: "https://github.com/shantanu/hawk-vulnerability-tool",
       linkedinPost: "https://linkedin.com/posts/shantanu_hawk-cybersecurity-activity-321",
       liveLink: "https://hawkscanner.live"
@@ -19,7 +19,7 @@ const Projects = ({ darkMode }: { darkMode: boolean }) => {
       title: "RecycleIT",
       description: "Eco-conscious marketplace for recycling and exchanging old electronics responsibly.",
       tags: ["React", "Firebase", "Firestore", "Tailwind CSS"],
-      image: "/projects/recycleit.jpg",
+      image: "../../public/assests/images/Project Section/RecycleIt.jpg",
       githubLink: "https://github.com/shantanu/recycleit",
       linkedinPost: "https://linkedin.com/posts/shantanu_recycleit-sustainability-activity-987",
       liveLink: "https://recycleit.org"
@@ -29,7 +29,7 @@ const Projects = ({ darkMode }: { darkMode: boolean }) => {
       title: "SnapLend",
       description: "A peer-to-peer digital lending platform for quick and secure personal loans.",
       tags: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
-      image: "/projects/snaplend.jpg",
+      image: "../../public/assests/images/Project Section/snaplend.jpg",
       githubLink: "https://github.com/shantanu/snaplend",
       linkedinPost: "https://linkedin.com/posts/shantanu_snaplend-fintech-activity-654",
       liveLink: "https://snaplend.app"
@@ -39,7 +39,7 @@ const Projects = ({ darkMode }: { darkMode: boolean }) => {
       title: "ChatVerse",
       description: "A real-time chat app with group chats, user authentication, and a sleek UI design.",
       tags: ["React", "Node.js", "Express", "MongoDB", "Socket.IO", "JWT", "Tailwind CSS"],
-      image: "/projects/chatverse.jpg",
+      image: "../../public/assests/images/Project Section/chatverse.png",
       githubLink: "https://github.com/shantanu/chatverse",
       linkedinPost: "https://linkedin.com/posts/shantanu_chatverse-chatapp-activity-123",
       liveLink: "https://chatverse.live"
@@ -48,8 +48,8 @@ const Projects = ({ darkMode }: { darkMode: boolean }) => {
       id: 5,
       title: "MeetVerse",
       description: "A smooth and scalable video calling platform with screen sharing and messaging support.",
-      tags: ["React", "WebRTC", "Node.js", "Socket.IO", "Tailwind CSS"],
-      image: "/projects/meetverse.jpg",
+      tags: ["React", "Stream", "Node.js", "Socket.IO", "Tailwind CSS"],
+      image: "../../public/assests/images/Project Section/MeetVerse.png",
       githubLink: "https://github.com/shantanu/meetverse",
       linkedinPost: "https://linkedin.com/posts/shantanu_meetverse-videoapp-activity-456",
       liveLink: "https://meetverse.live"
@@ -59,41 +59,12 @@ const Projects = ({ darkMode }: { darkMode: boolean }) => {
       title: "WriteVerse",
       description: "A collaborative markdown editor with real-time sync and minimal distraction design.",
       tags: ["React", "Firebase", "Quill.js", "Tailwind CSS"],
-      image: "/projects/writeverse.jpg",
+      image: "../../public/assests/images/Project Section/WriteVerse.jpg",
       githubLink: "https://github.com/shantanu/writeverse",
       linkedinPost: "https://linkedin.com/posts/shantanu_writeverse-editor-activity-789",
       liveLink: "https://writeverse.dev"
     },
-    {
-      id: 7,
-      title: "VidTube",
-      description: "A YouTube-inspired video streaming platform with search, categorization, and light/dark mode.",
-      tags: ["React", "RapidAPI", "Material UI", "React Router"],
-      image: "/projects/vidtube.jpg",
-      githubLink: "https://github.com/shantanu/vidtube",
-      linkedinPost: "https://linkedin.com/posts/shantanu_vidtube-videostreaming-activity-741",
-      liveLink: "https://vidtube.tv"
-    },
-    {
-      id: 8,
-      title: "MovieExplorer",
-      description: "A movie search web app with live data from TMDB API and responsive UI.",
-      tags: ["React", "TMDB API", "Tailwind CSS", "Axios"],
-      image: "/projects/movieexplorer.jpg",
-      githubLink: "https://github.com/shantanu/movieexplorer",
-      linkedinPost: "https://linkedin.com/posts/shantanu_movieexplorer-react-activity-852",
-      liveLink: "https://movieexplorer.io"
-    },
-    {
-      id: 9,
-      title: "CurrentBuzz",
-      description: "A news aggregator that fetches trending topics and stories from various sources in real time.",
-      tags: ["React", "News API", "Tailwind CSS", "Context API"],
-      image: "/projects/currentbuzz.jpg",
-      githubLink: "https://github.com/shantanu/currentbuzz",
-      linkedinPost: "https://linkedin.com/posts/shantanu_currentbuzz-newsapp-activity-963",
-      liveLink: "https://currentbuzz.today"
-    }
+   
   ];
   
 
@@ -168,7 +139,7 @@ const Projects = ({ darkMode }: { darkMode: boolean }) => {
     })
   };
 
-  const titleText = "My Projects";
+  const titleText = "Top Projects";
   
   // Effects for project cards
   const cardBackgroundVariants = {

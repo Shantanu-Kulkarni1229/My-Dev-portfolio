@@ -8,6 +8,7 @@ import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Achievements from './pages/Achievements';
 import Contact from './pages/Contact';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);

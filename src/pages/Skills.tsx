@@ -97,19 +97,19 @@ const Skills = ({ darkMode }: { darkMode: boolean }) => {
         //{ name: "Linux", icon: <SiDebian />, color: "text-orange-500", proficiency: 80 },
       ]
     },
-    {
-      title: "AI & Machine Learning",
-      icon: <RiBrainLine className="text-2xl" />,
-      description: "Implementing machine learning models and AI solutions for various applications.",
-      skills: [
-        { name: "TensorFlow", icon: <SiTensorflow />, color: "text-orange-500", proficiency: 75 },
-        { name: "PyTorch", icon: <SiPytorch />, color: "text-red-500", proficiency: 70 },
-        //{ name: "Hugging Face", icon: <SiHuggingface />, color: "text-yellow-500", proficiency: 75 },
-        { name: "Computer Vision", icon: <RiRobot2Line />, color: "text-purple-500", proficiency: 65 },
-        { name: "NLP", icon: <RiBrainLine />, color: "text-green-500", proficiency: 70 },
-        { name: "Prompt Engineering", icon: <RiCodeLine />, color: "text-indigo-500", proficiency: 85 },
-      ]
-    },
+    // {
+    //   title: "AI & Machine Learning",
+    //   icon: <RiBrainLine className="text-2xl" />,
+    //   description: "Implementing machine learning models and AI solutions for various applications.",
+    //   skills: [
+    //     { name: "TensorFlow", icon: <SiTensorflow />, color: "text-orange-500", proficiency: 75 },
+    //     { name: "PyTorch", icon: <SiPytorch />, color: "text-red-500", proficiency: 70 },
+    //     //{ name: "Hugging Face", icon: <SiHuggingface />, color: "text-yellow-500", proficiency: 75 },
+    //     { name: "Computer Vision", icon: <RiRobot2Line />, color: "text-purple-500", proficiency: 65 },
+    //     { name: "NLP", icon: <RiBrainLine />, color: "text-green-500", proficiency: 70 },
+    //     { name: "Prompt Engineering", icon: <RiCodeLine />, color: "text-indigo-500", proficiency: 85 },
+    //   ]
+    // },
     {
       title: "Software Engineering",
       icon: <RiSettings5Line className="text-2xl" />,

@@ -2,7 +2,7 @@ import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { useState, useRef } from 'react';
 import { FaGraduationCap, FaBriefcase, FaCode, FaUserTie, FaAward, FaMedal } from 'react-icons/fa';
 import { IoMdSchool } from 'react-icons/io';
-import { SiTypescript, SiReact, SiNodedotjs, SiJavascript, SiTailwindcss, SiNextdotjs, SiMongodb, SiGit } from 'react-icons/si';
+import { SiTypescript, SiReact, SiNodedotjs, SiJavascript, SiTailwindcss, SiNextdotjs, SiMongodb, SiGit, SiExpress } from 'react-icons/si';
 import { FaTrophy } from 'react-icons/fa';
 
 const About = ({ darkMode }: { darkMode: boolean }) => {
@@ -20,111 +20,19 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
   const scaleX = useTransform(smoothProgress, [0, 1], [0, 1]);
   
   // Timeline data for internships and projects
-  const timelineItems = [
-    {
-      id: 1,
-      type: 'internship',
-      title: 'Frontend Developer Intern',
-      company: 'Tech Innovators Inc.',
-      logo: '/tech-innovators-logo.png',
-      startDate: 'Jun 2023',
-      endDate: 'Present',
-      description: 'Developed responsive UIs with React and TypeScript. Implemented features that increased user engagement by 25% and optimized rendering performance by 40%.',
-      tags: ['React', 'TypeScript', 'Next.js'],
-      icon: <FaBriefcase />,
-      color: 'purple'
-    },
-    {
-      id: 2,
-      type: 'project',
-      title: 'E-commerce Platform',
-      company: 'Team Project',
-      logo: '/ecommerce-logo.png',
-      startDate: 'Mar 2023',
-      endDate: 'May 2023',
-      description: 'Led a team of 4 developers to build a full-stack e-commerce platform with payment integration and admin dashboard.',
-      tags: ['React', 'Node.js', 'MongoDB'],
-      icon: <FaCode />,
-      color: 'blue'
-    },
-    {
-      id: 3,
-      type: 'internship',
-      title: 'Web Development Trainee',
-      company: 'Digital Solutions Ltd.',
-      logo: '/digital-solutions-logo.png',
-      startDate: 'Jan 2023',
-      endDate: 'May 2023',
-      description: 'Built 10+ client websites using modern web technologies. Reduced page load times by 60% through optimization.',
-      tags: ['JavaScript', 'Tailwind CSS', 'Node.js'],
-      icon: <FaBriefcase />,
-      color: 'green'
-    }
-  ];
-
-  // Certifications/Achievements section
-  const achievements = [
-    { 
-      id: 1, 
-      title: "AWS Certified Developer", 
-      issuer: "Amazon Web Services", 
-      year: "2023",
-      icon: <FaAward className="text-yellow-500" />
-    },
-    { 
-      id: 2, 
-      title: "React Advanced Certification", 
-      issuer: "Frontend Masters", 
-      year: "2022",
-      icon: <FaMedal className="text-blue-500" />
-    },
-    { 
-      id: 3, 
-      title: "Hackathon Winner", 
-      issuer: "TechFest 2023", 
-      year: "2023",
-      icon: <FaTrophy className="text-purple-500" />
-    },
-  ];
+  
 
   // Experience data
   const experiences = [
     {
       id: 1,
-      title: "Frontend Developer Intern",
-      company: "Tech Innovators Inc.",
-      period: "Jun 2023 - Present",
-      description: "Developing responsive UIs with React and TypeScript. Collaborating on a SaaS product used by 50k+ users. Implemented new features that increased user engagement by 25% and optimized rendering performance by 40%.",
+      title: "Web-Development Intern",
+      company: "Nish-E-Services",
+      period: "May 2025 - Present",
+      description: "As Project Lead and Full Stack Developer at Nish E Service, I led the development of a responsive SaaS platform named DocNish utilizing React and TypeScript on the frontend and coordinating backend workflows. while overseeing the end-to-end project execution and team collaboration ",
       icon: <FaCode className="text-xl" />,
-      tech: [<SiReact />, <SiTypescript />, <SiNextdotjs />]
+      tech: [<SiReact />, <SiExpress />, <SiMongodb /> , <SiNodedotjs/>,]
     },
-    {
-      id: 2,
-      title: "Web Development Trainee",
-      company: "Digital Solutions Ltd.",
-      period: "Jan 2023 - May 2023",
-      description: "Built 10+ client websites using modern web technologies. Learned agile development methodologies. Reduced page load times by 60% through code optimization and implemented responsive designs that improved mobile user retention by 35%.",
-      icon: <FaBriefcase className="text-xl" />,
-      tech: [<SiNodedotjs />, <SiJavascript />, <SiTailwindcss />]
-    },
-    {
-      id: 3,
-      title: "Computer Science Degree",
-      company: "State University",
-      period: "2019 - 2023",
-      description: "Specialized in Web Technologies. GPA: 3.8/4.0. Lead developer for university hackathon team. Completed capstone project on 'AI-Enhanced User Experience in Web Applications' that received departmental honors.",
-      icon: <IoMdSchool className="text-xl" />,
-      tech: [<SiReact />, <SiJavascript />, <SiGit />]
-    },
-    {
-      id: 4,
-      title: "Freelance Developer",
-      company: "Self-Employed",
-      period: "2021 - 2022",
-      description: "Delivered 15+ projects for small businesses. Focused on e-commerce solutions and CMS development. Designed and implemented custom solutions that increased client conversions by an average of 30% and improved site analytics tracking.",
-      icon: <FaUserTie className="text-xl" />,
-      tech: [<SiReact />, <SiNodedotjs />, <SiMongodb />]
-    }
   ];
 
   // Animation variants
@@ -256,24 +164,16 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >
               <div className="relative h-64 w-full overflow-hidden">
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-br from-purple-500/30 to-blue-500/30"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.7, duration: 1 }}
-                />
+               
                 
-                <motion.img
-                  src="/profile.jpg"
+                <img
+                  src="../../public/assests/images/My Photos/IMG_9337.JPG"
                   alt="Profile"
                   className="w-full h-full object-cover"
-                  initial={{ scale: 1.2, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  transition={{ delay: 0.5, duration: 1.2, ease: "easeOut" }}
                 />
                 
                 {/* Animated gradient overlay */}
-                <motion.div 
+                {/* <motion.div 
                   className="absolute inset-0 bg-gradient-to-t"
                   style={{
                     background: darkMode ? 
@@ -283,14 +183,14 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.7, duration: 0.8 }}
-                />
+                /> */}
                 
                 {/* Glowing dots pattern */}
                 <motion.div 
                   className="absolute inset-0"
                   initial={{ opacity: 0 }}
-                  animate={{ opacity: 0.4 }}
-                  transition={{ delay: 1, duration: 1 }}
+                  animate={{ opacity: 0.0 }}
+                  transition={{ delay: 0, duration: 0 }}
                 >
                   {[...Array(20)].map((_, i) => (
                     <motion.div
@@ -349,6 +249,13 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
                   >
                     UI/UX
                   </motion.span>
+                  <motion.span 
+                    className={`inline-block mx-2 px-4 py-1 rounded-full text-sm font-medium mr-2 ${darkMode ? 'bg-purple-900/50 text-purple-200' : 'bg-purple-100 text-purple-800'}`}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    App Development
+                  </motion.span>
+
                 </motion.div>
                 
                 <motion.p 
@@ -357,7 +264,8 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.1, duration: 0.5 }}
                 >
-                  Passionate about creating elegant solutions to complex problems. 3+ years of experience building web applications with modern technologies. Constantly exploring new ways to enhance user experiences and optimize performance.
+                  Driven by innovation, fueled by curiosity.
+                  I'm a full-stack developer and data enthusiast who loves transforming bold ideas into impactful digital experiences. With hands-on experience in building real-time apps, AI-integrated platforms, and scalable dashboards, I specialize in turning complex challenges into elegant, user-focused solutions. Whether it’s crafting a seamless UI in React, diving into backend logic with Node.js, or pushing boundaries with 3D animations and smart alert systems—I'm always building, experimenting, and leveling up. Let's create something exceptional.
                 </motion.p>
                 
                 <motion.div 
@@ -391,7 +299,7 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 1.4, duration: 0.3, type: "spring" }}
                     >
-                      3+
+                      2+
                     </motion.div>
                     <div className={`text-xs ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Years Exp.</div>
                   </motion.div>
@@ -406,7 +314,7 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 1.5, duration: 0.3, type: "spring" }}
                     >
-                      5
+                      2+
                     </motion.div>
                     <div className={`text-xs ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Internships</div>
                   </motion.div>
@@ -419,7 +327,7 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.6, duration: 0.5 }}
                 >
-                  {['github', 'linkedin', 'twitter', 'facebook', 'instagram', 'youtube', 'dribbble', 'reddit'].map((social, index) => (
+                  {['github', 'linkedin', 'instagram',].map((social, index) => (
                     <motion.a
                       key={social}
                       href={`#${social}`}
@@ -625,26 +533,27 @@ const About = ({ darkMode }: { darkMode: boolean }) => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {[
                   {
-                    title: "User-Centered Design",
-                    description: "I approach each project from the user's perspective, ensuring intuitive experiences that solve real problems.",
+                    title: "Impact-Driven Design",
+                    description: "Every product I build is crafted with purpose—aiming to simplify complex problems through intuitive and meaningful user experiences.",
                     icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                     </svg>
                   },
                   {
-                    title: "Continuous Learning",
-                    description: "Technology evolves rapidly, and I'm committed to staying at the forefront through constant learning and experimentation.",
+                    title: "Relentless Learning",
+                    description: "Driven by curiosity, I constantly explore emerging tech—from full stack frameworks to AI—turning knowledge into practical, real-world solutions.",
                     icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
                   },
                   {
-                    title: "Code Quality",
-                    description: "I write clean, maintainable code that remains robust as projects scale and requirements evolve.",
+                    title: "Precision Engineering",
+                    description: "I architect scalable, maintainable systems—writing clean, efficient code with attention to performance, security, and future growth.",
                     icon: <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                     </svg>
                   }
+                  
                 ].map((item, i) => (
                   <motion.div
                     key={item.title}

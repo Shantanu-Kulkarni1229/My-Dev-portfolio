@@ -110,7 +110,7 @@ const Footer = ({ darkMode }: { darkMode: boolean }) => {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.0 }}
           className="flex flex-col items-center"
         >
           {/* Enhanced logo with animated particles */}
